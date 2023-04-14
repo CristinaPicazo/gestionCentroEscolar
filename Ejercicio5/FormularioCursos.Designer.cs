@@ -54,6 +54,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Eliminar Curso";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -64,6 +65,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Mostrar todos los cursos";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -74,6 +76,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Mostrar todos los alumnos pertenecientes a un curso";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormularioCursos
             // 
