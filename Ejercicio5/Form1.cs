@@ -29,13 +29,15 @@ namespace Ejercicio5
         //Gestión Alumnos
         private void button2_Click(object sender, EventArgs e)
         {
-
+            formularioAlumnos formularioAlumnos = new formularioAlumnos(listaPersonas);
+            formularioAlumnos.ShowDialog();
         }
 
         //Gestión Profesores
         private void button3_Click(object sender, EventArgs e)
         {
-
+            formularioProfesores formularioProfesores = new formularioProfesores(listaPersonas);
+            formularioProfesores.ShowDialog();
         }
     }
 }

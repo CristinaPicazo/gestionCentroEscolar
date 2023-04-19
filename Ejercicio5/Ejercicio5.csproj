@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumno.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -53,12 +55,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularioAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularioAlumnos.Designer.cs">
+      <DependentUpon>formularioAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioCursos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormularioCursos.Designer.cs">
       <DependentUpon>FormularioCursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioNuevoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioNuevoAlumno.Designer.cs">
+      <DependentUpon>FormularioNuevoAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioNuevoProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioNuevoProfesor.Designer.cs">
+      <DependentUpon>FormularioNuevoProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularioProfesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularioProfesores.Designer.cs">
+      <DependentUpon>formularioProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAlumnos.cs" />
     <Compile Include="ListaCursos.cs" />
     <Compile Include="ListaPersonas.cs" />
     <Compile Include="FormularioNuevoCurso.cs">
@@ -67,17 +94,31 @@
     <Compile Include="FormularioNuevoCurso.Designer.cs">
       <DependentUpon>FormularioNuevoCurso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personas.cs" />
+    <Compile Include="listaProfesores.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularioAlumnos.resx">
+      <DependentUpon>formularioAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioCursos.resx">
       <DependentUpon>FormularioCursos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormularioNuevoAlumno.resx">
+      <DependentUpon>FormularioNuevoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioNuevoCurso.resx">
       <DependentUpon>FormularioNuevoCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioNuevoProfesor.resx">
+      <DependentUpon>FormularioNuevoProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularioProfesores.resx">
+      <DependentUpon>formularioProfesores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

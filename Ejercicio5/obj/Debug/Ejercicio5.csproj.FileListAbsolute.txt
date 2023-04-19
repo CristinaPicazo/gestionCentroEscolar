@@ -1,0 +1,17 @@
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\bin\Debug\Ejercicio5.exe.config
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\bin\Debug\Ejercicio5.exe
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\bin\Debug\Ejercicio5.pdb
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.csproj.AssemblyReference.cache
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.csproj.SuggestedBindingRedirects.cache
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.Form1.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.FormularioCursos.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.FormularioNuevoCurso.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.Properties.Resources.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.csproj.GenerateResource.cache
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.csproj.CoreCompileInputs.cache
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.exe
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.pdb
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.formularioAlumnos.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.FormularioNuevoAlumno.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.FormularioNuevoProfesor.resources
+C:\Users\derez\Desktop\DAW\Programación\Tema 8\Ejercicios\Ejercicio5\Ejercicio5\obj\Debug\Ejercicio5.formularioProfesores.resources

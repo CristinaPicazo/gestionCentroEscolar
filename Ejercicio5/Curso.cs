@@ -24,5 +24,14 @@ namespace Ejercicio5
             Codigo = codigo;
             Nombre = nombre;     
         }
+
+        public string detallesCurso()
+        {
+            string texto;
+            texto = "Curso:\t\t " + codigo;
+            texto += "\n Nombre:\t\t" + nombre;
+
+            return texto;
+        }
     }
 }
