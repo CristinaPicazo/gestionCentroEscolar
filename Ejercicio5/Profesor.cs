@@ -10,14 +10,14 @@ namespace Ejercicio5
     {
         public List<string> listaAsignaturas;
 
-        public Profesor(string dni, string nombre) : base(dni, nombre)
+        public Profesor(string dni, string nombre, string telefono, int curso) : base(dni, nombre, telefono, curso)
         {
             listaAsignaturas = new List<string>();
         }
 
         public override string ToString()
         {
-            string texto = "Alumno: \n";
+            string texto = "\nProfesor: \n";
             texto += base.ToString();
             texto += "\nAsignaturas: " + verAsignaturas();
             return texto;
@@ -30,7 +30,7 @@ namespace Ejercicio5
             {
                 foreach(var asignatura in listaAsignaturas)
                 {
-                    texto += "\n\t" + asignatura;
+                    texto += asignatura +", ";
                 }
             }
             return texto;

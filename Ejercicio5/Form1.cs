@@ -18,25 +18,26 @@ namespace Ejercicio5
         }
 
         ListaPersonas listaPersonas = new ListaPersonas();
+        ListaCursos listaCursos = new ListaCursos();
 
         //Gestión Cursos
         private void button1_Click(object sender, EventArgs e)
         {
-            FormularioCursos formularioCursos = new FormularioCursos(listaPersonas);
+            FormularioCursos formularioCursos = new FormularioCursos(listaPersonas, listaCursos);
             formularioCursos.ShowDialog();
         }
 
         //Gestión Alumnos
         private void button2_Click(object sender, EventArgs e)
         {
-            formularioAlumnos formularioAlumnos = new formularioAlumnos(listaPersonas);
+            FormularioAlumnos formularioAlumnos = new FormularioAlumnos(listaPersonas, listaCursos);
             formularioAlumnos.ShowDialog();
         }
 
         //Gestión Profesores
         private void button3_Click(object sender, EventArgs e)
         {
-            formularioProfesores formularioProfesores = new formularioProfesores(listaPersonas);
+            formularioProfesores formularioProfesores = new formularioProfesores(listaPersonas, listaCursos);
             formularioProfesores.ShowDialog();
         }
     }

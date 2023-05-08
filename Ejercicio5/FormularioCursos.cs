@@ -13,15 +13,16 @@ namespace Ejercicio5
     public partial class FormularioCursos : Form
     {
         public ListaPersonas listaPersonas;
-        ListaCursos listaCursos = new ListaCursos();
-        public FormularioCursos(ListaPersonas listaPersonas)
+        ListaCursos listaCursos;
+        public FormularioCursos(ListaPersonas listaPersonas, ListaCursos listaCursos)
         {
-            InitializeComponent();
             this.listaPersonas = listaPersonas;
+            this.listaCursos = listaCursos;
+            InitializeComponent();
         }
 
-        //Añadir Curso
-        private void button1_Click(object sender, EventArgs e)
+            //Añadir Curso
+            private void button1_Click(object sender, EventArgs e)
         {
             FormularioNuevoCurso formularioNuevoCurso = new FormularioNuevoCurso(listaCursos);
             formularioNuevoCurso.ShowDialog();

@@ -10,7 +10,7 @@ namespace Ejercicio5
 {
     public class ListaCursos
     {
-        private List<Curso> listaCursos;
+        public List<Curso> listaCursos;
 
         public ListaCursos()
         {
@@ -29,7 +29,7 @@ namespace Ejercicio5
                 int codigo = int.Parse(Interaction.InputBox("Código del curso a eliminar:"));
                 if(codigo > 0)
                 {
-                    foreach(var curso in listaCursos)
+                    foreach(Curso curso in listaCursos)
                     {
                         if(curso.Codigo == codigo)
                         {
@@ -48,9 +48,8 @@ namespace Ejercicio5
         public void mostrarCursos()
         {
             string texto = "";
-            foreach(var curso in listaCursos)
+            foreach(Curso curso in listaCursos)
             {
-                texto = "Curso: ";
                 texto += curso.detallesCurso();
             }
             MessageBox.Show(texto);
@@ -58,35 +57,17 @@ namespace Ejercicio5
 
         public void mostarAlumnosPorCurso(ListaPersonas listaPersonas)
         {
-            try
-            {
-                string texto;
-                bool encontrado = false;
-                int codigo = int.Parse(Interaction.InputBox("Código del curso a mostrar:"));
-                if(codigo > 0)
-                {
-                    foreach(var curso in listaCursos)
-                    {
-                        if(curso.Codigo == codigo)
-                        {
-                            texto = curso.detallesCurso();
-                            //texto += listaPersonas.detalleAlumno();
-                            //TODO buscar alumnos por curso y mostrarlos en el curso
-                            encontrado= true;
-                            MessageBox.Show(texto);
-                        }                        
-                    }
-                    if(!encontrado)
-                    {
-                        MessageBox.Show("Curso no encontrado");
-                    }
-                }
-            }
-            catch(FormatException)
-            {
-                MessageBox.Show("El código tiene que ser numérico");
-            }
+            listaPersonas.mostrarPersonaPorCurso();           
             
         }
+
+        public bool existeCurso(int cursoABuscar)
+        {
+            foreach(Curso curso in listaCursos)
+            {
+                    if(curso.Codigo == cursoABuscar) return true;
+            }
+                return false;
+        }        
     }
 }

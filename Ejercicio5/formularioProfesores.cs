@@ -13,60 +13,66 @@ namespace Ejercicio5
     public partial class formularioProfesores : Form
     {
         ListaPersonas listaPersonas;
-        ListaProfesores listaProfesores = new ListaProfesores();
-        public formularioProfesores(ListaPersonas listaPersonas)
+        public List<Profesor> listaProfesor = new List<Profesor>();
+        ListaCursos listaCursos;
+        string profesor = "profesor";
+
+        public formularioProfesores(ListaPersonas listaPersonas, ListaCursos listaCursos)
         {
-            InitializeComponent();
             this.listaPersonas = listaPersonas;
+            this.listaCursos = listaCursos;
+            InitializeComponent();
+
         }
+
 
         //Nuevo profesor
         private void button1_Click(object sender, EventArgs e)
         {
-            FormularioNuevoProfesor formularioNuevoProfesor = new FormularioNuevoProfesor(listaPersonas, listaProfesores);
+            FormularioNuevoProfesor formularioNuevoProfesor = new FormularioNuevoProfesor(listaPersonas,listaCursos);
             formularioNuevoProfesor.ShowDialog();
         }
 
         //Eliminar profesor
         private void button2_Click(object sender, EventArgs e)
         {
-            listaProfesores.eliminarProfesor();
+            listaPersonas.eliminarPersona();
         }
 
         //Mostrar lista
         private void button3_Click(object sender, EventArgs e)
         {
-            listaProfesores.mostrarProfesores();
+            listaPersonas.mostrarProfesores();
         }
 
         //ordenar
         private void button4_Click(object sender, EventArgs e)
         {
-            listaProfesores.ordenarProfesores();
+            listaPersonas.ordenar(profesor);
         }
 
         //Mostrar datos
         private void button5_Click(object sender, EventArgs e)
         {
-            listaProfesores.mostrarProfesorPorNombre();
+            listaPersonas.mostrarPersonaPorNombre(profesor);
         }
 
         //añadir asignaturas
         private void button6_Click(object sender, EventArgs e)
         {
-            listaProfesores.anadirAsignatura();
+            listaPersonas.anadirAsignatura();
         }
 
         //Eliminar asignaturas
         private void button7_Click(object sender, EventArgs e)
         {
-            listaProfesores.eliminarAsignaturas();
+            listaPersonas.eliminarAsignaturas();
         }
 
         //Mostrar profesores que imparten una asignatura
         private void button8_Click(object sender, EventArgs e)
         {
-            listaProfesores.profesoresUnaAsignatura();
+            listaPersonas.profesoresUnaAsignatura();
         }
     }
 }

@@ -27,8 +27,8 @@ namespace Ejercicio5
 
         public string detallesCurso()
         {
-            string texto;
-            texto = "Curso:\t\t " + codigo;
+            string texto = "";
+            texto += "\nCurso:\t\t " + codigo;
             texto += "\n Nombre:\t\t" + nombre;
 
             return texto;

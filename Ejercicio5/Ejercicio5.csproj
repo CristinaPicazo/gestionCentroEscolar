@@ -55,11 +55,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularioAlumnos.cs">
+    <Compile Include="FormularioAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularioAlumnos.Designer.cs">
-      <DependentUpon>formularioAlumnos.cs</DependentUpon>
+    <Compile Include="FormularioAlumnos.Designer.cs">
+      <DependentUpon>FormularioAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioCursos.cs">
       <SubType>Form</SubType>
@@ -85,7 +85,6 @@
     <Compile Include="formularioProfesores.Designer.cs">
       <DependentUpon>formularioProfesores.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAlumnos.cs" />
     <Compile Include="ListaCursos.cs" />
     <Compile Include="ListaPersonas.cs" />
     <Compile Include="FormularioNuevoCurso.cs">
@@ -94,7 +93,6 @@
     <Compile Include="FormularioNuevoCurso.Designer.cs">
       <DependentUpon>FormularioNuevoCurso.cs</DependentUpon>
     </Compile>
-    <Compile Include="listaProfesores.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
@@ -102,8 +100,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formularioAlumnos.resx">
-      <DependentUpon>formularioAlumnos.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioAlumnos.resx">
+      <DependentUpon>FormularioAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioCursos.resx">
       <DependentUpon>FormularioCursos.cs</DependentUpon>

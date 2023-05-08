@@ -1,31 +1,40 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Ejercicio5
 {
     public class Alumno : Persona
     {
-        private int curso;
         public List<double> listaNotas;
 
-        public int Curso { get => curso; set => curso =  value ; }
-
-        public Alumno(string dni, string nombre): base(dni, nombre)
+        public Alumno(string dni, string nombre, string telefono, int curso): base(dni, nombre, telefono, curso)
         {
-            int curso = 0;
             listaNotas = new List<double>();
         }
 
         public override string ToString()
         {
-            string texto = "Alumno: \n";
+            string texto = "\nAlumno: \n";
             texto += base.ToString();
-            texto += "\nCurso: \t\t" + curso;
             texto += "\nNotas: " + vernotas();
             return texto;
+        }
+
+        public bool buscarCurso(int curso)
+        {
+            bool tieneCurso = false;
+            {
+                if(curso == Curso)
+                {
+                    tieneCurso = true;
+                }
+            }
+            return tieneCurso;
         }
 
         public string vernotas()
@@ -37,11 +46,11 @@ namespace Ejercicio5
             {
                 foreach(var nota in listaNotas)
                 {
-                    texto += "\n\t" + nota;
+                    texto += + nota+", ";
                     totalNotas += nota;
                 }
-                notaMedia = totalNotas / listaNotas.Count;
-                texto += "\nNota media: " + notaMedia;
+                notaMedia = Math.Round(totalNotas / listaNotas.Count,2);
+                texto += "\nNota media: " + notaMedia + "\n ";
             }
             return texto;
         }

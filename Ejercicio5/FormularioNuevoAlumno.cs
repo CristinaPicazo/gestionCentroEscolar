@@ -13,12 +13,13 @@ namespace Ejercicio5
     public partial class FormularioNuevoAlumno : Form
     {
         ListaPersonas listaPersonas;
-        ListaAlumnos listaAlumnos;
-        public FormularioNuevoAlumno(ListaPersonas listaPersonas, ListaAlumnos listaAlumnos)
+        ListaCursos listaCursos;
+
+        public FormularioNuevoAlumno(ListaPersonas listaPersonas, ListaCursos listaCursos)
         {
-            InitializeComponent();
             this.listaPersonas = listaPersonas;
-            this.listaAlumnos = listaAlumnos;
+            this.listaCursos = listaCursos;
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,17 +29,29 @@ namespace Ejercicio5
 
                 string dni = dniTextBox.Text;
                 string nombre = nombreTextBox.Text;
+                string telefono = telefonoTextBox.Text;
+                int curso = int.Parse(cursoTextBox.Text);
 
-                Alumno alumno = new Alumno(dni, nombre);
-
-                listaPersonas.anadirPersona(alumno);
-                listaAlumnos.anadirAlumno(alumno);
-                this.Close();
+                if(listaCursos.existeCurso(curso) && !listaPersonas.existeDNI(dni))
+                {
+                    Alumno alumno = new Alumno(dni, nombre, telefono, curso);
+                    listaPersonas.anadirPersona(alumno);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Tiene que existir el curso y el dni tiene que ser único");
+                }
 
             }catch(FormatException)
             {
                 MessageBox.Show("No puede estar ningún campo vacío ni con el formato incorrecto");
             }
+
+        }
+
+        private void cursoTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
